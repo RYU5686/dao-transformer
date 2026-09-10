@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DAO Transformer</title>
+<link rel="stylesheet" href="./public/style.css">
+</head>
+<body>
+<main class="wrap">
+<header>
+  <div class="brand"><div class="mark">DAO</div><div><b>DAO Transformer</b><small>Browser-only MP4 transformation</small></div></div>
+  <span class="local">100% LOCAL</span>
+</header>
+
+<section class="hero">
+  <span>DAO TRANSFORMER</span>
+  <h1>Transform MP4.<br><em>Without a server.</em></h1>
+  <p>Your video stays on your device. The browser performs the transformation locally.</p>
+</section>
+
+<section class="card">
+  <label class="drop" id="drop">
+    <input id="file" type="file" accept=".mp4,video/mp4">
+    <div class="icon">↑</div>
+    <strong id="pick">Drop an MP4 here</strong>
+    <small>or tap to choose a file</small>
+  </label>
+
+  <div id="chosen" class="chosen" hidden>
+    <div><b id="name"></b><small id="size"></small></div>
+    <button id="remove">Remove</button>
+  </div>
+
+  <button id="run" class="run" disabled>Transform MP4</button>
+
+  <div id="status" class="status" hidden>
+    <div id="state"></div>
+    <pre id="log"></pre>
+    <a id="download" hidden>Download transformed MP4</a>
+  </div>
+</section>
+
+<section class="notes">
+  <div><b>No upload</b><span>Input remains in this browser session.</span></div>
+  <div><b>Client-side</b><span>Static hosting is enough; no Python server is required.</span></div>
+  <div><b>Source-derived</b><span>Transformation follows the supplied patcher reference.</span></div>
+</section>
+
+<footer>DAO TRANSFORMATION COMPLETE · SERVERLESS EDITION</footer>
+<script type="module" src="./src/app.js"></script>
+</main>
+</body>
+</html>
